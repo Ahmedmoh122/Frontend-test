@@ -1,0 +1,30 @@
+{
+  "Conv2d": {
+    "required_params": ["in_channels", "out_channels", "kernel_size"],
+    "optional_params": {"stride": 1, "padding": 0}
+  },
+  "Linear": {
+    "required_params": ["in_features", "out_features"],
+    "optional_params": {"bias": true}
+  },
+  "Flatten": {
+    "required_params": [],
+    "optional_params": {"start_dim": 1, "end_dim": -1}
+  },
+  "ReLU": {
+    "required_params": [],
+    "optional_params": {"inplace": false}
+  },
+  "GELU": {
+    "required_params": [],
+    "optional_params": {}
+  },
+  "Softmax": {
+    "required_params": [],
+    "optional_params": {"dim": 1}
+  },
+  "Dropout": {
+    "required_params": [],
+    "optional_params": {"p": 0.5}
+  }
+}
